@@ -30,7 +30,7 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings)
 
 # 2. Αρχικοποίηση LLM (Δωρεάν μέσω Groq)
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    model="openai/gpt-oss-120b",
     temperature=0.2,
     api_key=os.environ.get("GROQ_API_KEY")
 )
