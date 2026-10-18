@@ -17,20 +17,6 @@
 
 ---
 
-## Δομή του Project
-
-
-├── app.py                   # Κεντρική εφαρμογή Streamlit (Chatbot & UI Ingestion)
-├── ingestion.py             # CLI script για offline batch ingestion (έχει μείνει μόνο για την περίπτωση ανεβάσματος μεγάλου αρχείου, ως backup για να μην κολλήσει το streamlit)
-├── processed_files.json     # Μητρώο επεξεργασμένων αρχείων (SHA256 hashes)
-├── requirements.txt         # Εξαρτήσεις βιβλιοθηκών Python
-├── Dockerfile               # Multi-stage / CPU-optimized Docker image
-├── docker-compose.yml       # Ενορχήστρωση υπηρεσιών και persistent volumes
-├── .dockerignore            # Αποκλεισμός περιττών αρχείων από το build context
-├── .env.example             # Πρότυπο περιβαλλοντικών μεταβλητών
-└── README.md                # Τεκμηρίωση του project
-
---- 
 
 ## Οδηγίες Χρήσης & Διαχείριση Docker
 
@@ -45,10 +31,17 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ### 2. Build and Run
 Στον φάκελο του πρότζεκτ:
+```bash
 docker compose up -d --build (αν τρέχει την πρώτη φορά και χρειάζεται το build)
+```
+Ή:
+```bash
 docker compose up -d (αν έχει προηγηθεί το build)
-Για να σταματήσει: docker compose down.
-
+```
+Για να σταματήσει:
+```bash 
+docker compose down.
+```
 ---
 
 ## Παραδείγματα
