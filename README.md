@@ -38,6 +38,7 @@ docker compose up -d --build (αν τρέχει την πρώτη φορά κα�
 ```bash
 docker compose up -d (αν έχει προηγηθεί το build)
 ```
+Για να δείτε την εφαρμογή, πηγαίντε στο http://localhost:8501
 Για να σταματήσει:
 ```bash 
 docker compose down.
