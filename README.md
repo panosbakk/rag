@@ -19,7 +19,7 @@
 
 ## Δομή του Project
 
-```text
+
 ├── app.py                   # Κεντρική εφαρμογή Streamlit (Chatbot & UI Ingestion)
 ├── ingestion.py             # CLI script για offline batch ingestion (έχει μείνει μόνο για την περίπτωση ανεβάσματος μεγάλου αρχείου, ως backup για να μην κολλήσει το streamlit)
 ├── processed_files.json     # Μητρώο επεξεργασμένων αρχείων (SHA256 hashes)
@@ -30,6 +30,8 @@
 ├── .env.example             # Πρότυπο περιβαλλοντικών μεταβλητών
 └── README.md                # Τεκμηρίωση του project
 
+--- 
+
 ## Οδηγίες Χρήσης & Διαχείριση Docker
 
 ### 1. Ρύθμιση Περιβάλλοντος (`.env`)
@@ -38,11 +40,15 @@ PINECONE_API_KEY=your_pinecone_api_key_here
 PINECONE_INDEX_NAME=your_index_name_here
 GROQ_API_KEY=your_groq_api_key_here
 
+---
+
 ### 2. Build and Run
 Στον φάκελο του πρότζεκτ:
 docker compose up -d --build (αν τρέχει την πρώτη φορά και χρειάζεται το build)
 docker compose up -d (αν έχει προηγηθεί το build)
 Για να σταματήσει: docker compose down.
+
+---
 
 ## Παραδείγματα
 
