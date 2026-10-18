@@ -36,10 +36,11 @@
 
 ### 1. Ρύθμιση Περιβάλλοντος (`.env`)
 Δημιουργήστε ένα αρχείο `.env` στον κεντρικό φάκελο του project (βασισμένο στο `.env.example`):
+```bash
 PINECONE_API_KEY=your_pinecone_api_key_here
 PINECONE_INDEX_NAME=your_index_name_here
 GROQ_API_KEY=your_groq_api_key_here
-
+```
 ---
 
 ### 2. Build and Run
